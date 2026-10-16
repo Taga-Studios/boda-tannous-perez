@@ -1,0 +1,6 @@
+{
+  "name": "boda-tannous-perez",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node tests/site.test.mjs", "serve": "python3 -m http.server 4175" }
+}

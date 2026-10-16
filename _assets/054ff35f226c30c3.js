@@ -1,9 +1,0 @@
-(globalThis["webpackChunk_canva_web"] = globalThis["webpackChunk_canva_web"] || []).push([[97857],{
-
-/***/ 200141:
-function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(30488);__web_req__(339748);globalThis._5f74ec40302898c5a55451c9fbd04240 = globalThis._5f74ec40302898c5a55451c9fbd04240 || {};(function(__c) {var dFd=function(a,b){b=a.ag.get(__c.Cv(b));return b!=null?a.l7.get(__c.Cv(b.ref)):void 0},eFd=__webpack_require__(815703).F;var fFd=__webpack_require__(261896),gFd=fFd.fm,hFd=fFd.h5,iFd=fFd.XI;var jFd=({expr:a,resource:b,NG:c,jf:d,APa:e,J:f})=>{let g;const h=gFd(()=>{const k=__c.ODa(c,b.ref.ref);k!==g&&(g=k,k.catch(eFd.wrap(l=>{f.Eb(l,{Td:"Failed to render brand blueprint",extra:new Map([["blueprintId",b.ref.ref.id],["blueprintVersion",String(b.ref.ref.version)]])})})))});return{Ja:a.list(()=>{const k=dFd(c,b.ref.ref);if(!k)return[];__c.x(k.type==="group","Expected group element");const l=k.Ar,m=d.ref;return m&&l!=null?k.Ja.filter(__c.ra).map(n=>e.create(n,m,l.iG)):k.Ja.filter(__c.ra).map(n=>
-__c.KF.create({...n,locked:!0,rg:!0}))}),wk:h}};__c.Z9c={Rj:__c.$y()(({Az:{expr:a,J:b},Pf:{NG:c,...d}})=>{const e=new __c.s4c(a,d.Zb);return{...__c.LU,metadata:{type:"blueprint",kN:f=>f.Go.resource.ref.id,name:__c.K("IqoIzw")},C:{type:0,iu:({C:f})=>{const g=__c.y(d.Zb),{wk:h,Ja:k}=jFd({expr:a,resource:f.Go.resource,NG:c,jf:f.Go.jf,APa:e,J:b}),l=hFd(()=>__c.eq(g,k));return{Ja:k,wk:iFd(()=>{l();h()})}}}}})};
-}).call(globalThis, globalThis._5f74ec40302898c5a55451c9fbd04240);}
-
-}])
-//# sourceMappingURL=sourcemaps/054ff35f226c30c3.js.map
