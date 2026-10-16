@@ -12,4 +12,10 @@ for (const asset of Object.values(invitation.assets)) {
   assert.ok(asset.startsWith('assets/art/'), `unexpected asset path: ${asset}`);
 }
 assert.equal(typeof invitation.rsvpUrl, 'string');
-console.log('content configuration is complete');
+
+// The first viewport is an independently authored envelope tableau.
+const markup = await import('node:fs/promises').then(({ readFile }) => readFile(new URL('../app.js', import.meta.url), 'utf8'));
+assert.match(markup, /envelope-tableau/);
+assert.match(markup, /envelope-photo/);
+assert.match(markup, /wax-seal/);
+console.log('content configuration and envelope cover are complete');

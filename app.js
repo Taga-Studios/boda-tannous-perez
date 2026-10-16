@@ -5,12 +5,14 @@ const mapLink = (url) => url ? `<a class="map-link" target="_blank" rel="norefer
 const schedule = i.itinerary.map(([time, label]) => `<li><time>${time}</time><span>${label}</span></li>`).join('');
 
 root.innerHTML = `
-  <header class="hero">
-    <div class="hero-art" aria-hidden="true">
-      <img class="hero-paper" src="${i.assets.paper}" alt="">
-      <img class="hero-envelope" src="${i.assets.envelope}" alt="">
-      <img class="hero-photo" src="${i.assets.couple}" alt="">
-      <img class="hero-flowers" src="${i.assets.flowers}" alt="">
+  <header class="hero" aria-label="Sobre de la invitación">
+    <img class="hero-paper" src="${i.assets.paper}" alt="">
+    <div class="callas callas-left" aria-hidden="true"><img src="${i.assets.flowers}" alt=""></div>
+    <div class="callas callas-right" aria-hidden="true"><img src="${i.assets.flowers}" alt=""></div>
+    <div class="envelope-tableau">
+      <img class="envelope-shell" src="${i.assets.envelope}" alt="Sobre color vino">
+      <img class="envelope-photo" src="${i.assets.couple}" alt="Fotografía de la pareja">
+      <span class="wax-seal" aria-hidden="true">O<span>J</span></span>
     </div>
     <button class="music" id="music-button" hidden type="button" aria-label="Reproducir nuestra canción">♫ <span>Dale play para escuchar<br>nuestra canción</span></button>
   </header>
