@@ -7,10 +7,10 @@ const schedule = i.itinerary.map(([time, label]) => `<li><time>${time}</time><sp
 root.innerHTML = `
   <header class="hero">
     <div class="hero-art" aria-hidden="true">
+      <img class="hero-paper" src="${i.assets.paper}" alt="">
       <img class="hero-envelope" src="${i.assets.envelope}" alt="">
-      <img class="hero-photo" src="${i.assets.heroPhoto}" alt="">
+      <img class="hero-photo" src="${i.assets.couple}" alt="">
       <img class="hero-flowers" src="${i.assets.flowers}" alt="">
-      <img class="hero-seal" src="${i.assets.seal}" alt="">
     </div>
     <button class="music" id="music-button" hidden type="button" aria-label="Reproducir nuestra canción">♫ <span>Dale play para escuchar<br>nuestra canción</span></button>
   </header>

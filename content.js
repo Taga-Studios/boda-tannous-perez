@@ -22,9 +22,9 @@ export const invitation = {
   rsvpUrl: '', // Add a form URL here when confirmations need to be sent.
   musicUrl: '', // Add a direct MP3 URL to enable the music button.
   assets: {
-    heroPhoto: 'assets/art/couple-photo.jpg',
-    envelope: 'assets/art/hero-envelope.png',
-    flowers: 'assets/art/hero-flowers.png',
-    seal: 'assets/art/hero-seal.png',
+    paper: 'assets/art/paper-texture.jpg',
+    envelope: 'assets/art/envelope.png',
+    flowers: 'assets/art/floral-spray.png',
+    couple: 'assets/art/couple-silhouette.png',
   },
 };
