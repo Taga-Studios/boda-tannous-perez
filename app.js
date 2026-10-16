@@ -29,14 +29,7 @@ root.innerHTML = `
     <section class="message section"><span class="flourish" aria-hidden="true">❦</span><p>${i.welcome}</p></section>
     <section class="gifts section layered"><img class="gift-art" src="assets/source/2e40c67670812ad3cde88adcb5301f22.png" alt=""><p>${i.giftMessage}</p><div class="gift-card"><span>R</span><b>EGALOS</b></div></section>
     <section class="countdown-section section"><p class="eyebrow">Faltan</p><div id="countdown" aria-live="polite" aria-label="Cuenta regresiva"></div><p class="count-caption">Para nuestro gran día</p></section>
-    <section class="rsvp section layered" id="confirmar"><img class="rsvp-art" src="assets/source/b96e7809c0e7cee6c915061a579a1451.png" alt="">
-      <p class="eyebrow">Confirmación de asistencia</p><h2>¿Podrás acompañarnos<br>en nuestro gran día?</h2>
-      <form id="rsvp-form">
-        <label>Nombre y apellido<input name="name" autocomplete="name" required></label>
-        <fieldset><legend>Tu respuesta</legend><label><input type="radio" name="attendance" value="yes" required> Sí, con mucho gusto</label><label><input type="radio" name="attendance" value="no"> No podré asistir</label></fieldset>
-        <button type="submit">Confirmar asistencia</button><p class="form-status" id="form-status" role="status"></p>
-      </form><p class="deadline">${i.rsvpDeadline}</p>
-    </section>
+    <section class="rsvp section layered" id="confirmar"><img class="rsvp-art" src="assets/source/b96e7809c0e7cee6c915061a579a1451.png" alt=""><img class="rsvp-photo" src="assets/source/2076ec9d18adfcb4d8d90869a1872e3b.jpg" alt=""><span class="rsvp-ornament" aria-hidden="true">❦</span><p class="deadline">${i.rsvpDeadline}</p></section>
   </main>
   <footer>${i.couple.primary} &amp; ${i.couple.secondary} · ${i.date.label}</footer>
 `;
@@ -48,13 +41,6 @@ function updateCountdown() {
   countdown.innerHTML = values.map(([value, label]) => `<div><b>${String(value).padStart(2, '0')}</b><small>${label}</small></div>`).join('');
 }
 updateCountdown(); setInterval(updateCountdown, 1000);
-
-const form = document.querySelector('#rsvp-form');
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  if (i.rsvpUrl) window.open(i.rsvpUrl, '_blank', 'noopener');
-  else document.querySelector('#form-status').textContent = 'Gracias. La confirmación quedará lista al añadir un enlace de formulario en content.js.';
-});
 
 if (i.musicUrl) {
   const audio = new Audio(i.musicUrl); const button = document.querySelector('#music-button'); button.hidden = false;
