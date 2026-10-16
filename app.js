@@ -23,23 +23,13 @@ root.innerHTML = `
       <span class="ornament" aria-hidden="true">❦</span>
     </section>
 
-    <section class="venue section" id="ceremonia">
-      <p class="eyebrow">Ceremonia</p><h2>${i.ceremony.name}</h2>
-      <p class="address">${i.ceremony.address.join('<br>')}</p>
-      <p class="time">Hora: ${i.ceremony.time}</p>${mapLink(i.ceremony.mapUrl)}
-    </section>
-
-    <section class="itinerary section">
-      <p class="eyebrow">Itinerario</p><ol>${schedule}</ol>
-    </section>
-
-    <section class="dress section"><p class="eyebrow">Dress code</p><h2>Formal de noche</h2><p>${i.dressCode}</p><p class="small-note">${i.dressNote}</p></section>
+    <section class="venue section layered ceremony" id="ceremonia"><img class="circle" src="assets/source/5672fca60c7cc4221d87cd5e7274d85f.png" alt=""><p class="eyebrow">Ceremonia</p><h2>${i.ceremony.name}</h2><p class="address">${i.ceremony.address.join('<br>')}</p><p class="time">Hora: ${i.ceremony.time}</p>${mapLink(i.ceremony.mapUrl)}</section>
+    <section class="itinerary section layered"><img class="wide-photo" src="assets/source/2076ec9d18adfcb4d8d90869a1872e3b.jpg" alt=""><img class="itinerary-art" src="assets/source/7842638da60aa8819ee3a54635bd4dfe.png" alt=""><p class="eyebrow">Itinerario</p><ol>${schedule}</ol></section>
+    <section class="dress section layered"><img class="circle" src="assets/source/5672fca60c7cc4221d87cd5e7274d85f.png" alt=""><img class="dress-art" src="assets/source/6ffd2d6f0b5e8be8e8fbee200adec567.png" alt=""><div class="dress-card"><p class="eyebrow">Dress code</p><h2>Formal de noche</h2><p>${i.dressCode}</p><p class="small-note">${i.dressNote}</p></div></section>
     <section class="message section"><span class="flourish" aria-hidden="true">❦</span><p>${i.welcome}</p></section>
-    <section class="gifts section"><p class="eyebrow">Regalos</p><p>${i.giftMessage}</p></section>
-
+    <section class="gifts section layered"><img class="gift-art" src="assets/source/2e40c67670812ad3cde88adcb5301f22.png" alt=""><p>${i.giftMessage}</p><div class="gift-card"><span>R</span><b>EGALOS</b></div></section>
     <section class="countdown-section section"><p class="eyebrow">Faltan</p><div id="countdown" aria-live="polite" aria-label="Cuenta regresiva"></div><p class="count-caption">Para nuestro gran día</p></section>
-
-    <section class="rsvp section" id="confirmar">
+    <section class="rsvp section layered" id="confirmar"><img class="rsvp-art" src="assets/source/b96e7809c0e7cee6c915061a579a1451.png" alt="">
       <p class="eyebrow">Confirmación de asistencia</p><h2>¿Podrás acompañarnos<br>en nuestro gran día?</h2>
       <form id="rsvp-form">
         <label>Nombre y apellido<input name="name" autocomplete="name" required></label>
